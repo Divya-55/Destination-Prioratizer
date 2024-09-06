@@ -6,22 +6,16 @@ class LocationService:
         self.GOOGLEMAPS_API_KEY = googlemaps_api_key
 
     def get_geolocation_data(self):
-        # Define the endpoint for the Geolocation API
-        endpoint = "https://www.googleapis.com/geolocation/v1/geolocate"
-        # Define the parameters, including WiFi access points and cell tower info
-        params = {
-            "key": self.GOOGLEMAPS_API_KEY
-        }
-        payload = {
-            "considerIp": "true"
-        }
-        # Make a request to the Geolocation API
-        response = requests.post(endpoint, json=payload, params=params)
+        response = requests.get('https://ipinfo.io/')
+
         # Check if the request was successful
         if response.status_code == 200:
-            # Parse the JSON response
             data = response.json()
-            my_location = data["location"]
+            location = data['loc'].split(',')
+            my_location = {
+                'lat': location[0],
+                'lng': location[1]
+            }
             return my_location
         else:
             print("Failed to retrieve geolocation data:", response.status_code, response.text)
