@@ -93,7 +93,3 @@ Simply enter your destinations, and the it will create a route that saves time a
 - **HTTP Requests**: Requests library.
 - **Map Tiles**: CartoDB (OpenStreetMap).
 
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
