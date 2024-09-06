@@ -37,20 +37,27 @@ Simply enter your destinations, and the it will create a route that saves time a
     python3 -m venv venv
     source venv/bin/activate   # On Windows, use 'venv\Scripts\activate'
     ```
+3. **Configure Environment Variables**:
 
-3. **Install dependencies:**
+Create a `.env` file in the project root and include the following variables:
+
+```plaintext
+GOOGLEMAPS_API_KEY=YOUR_GOOGLE_MAPS_API_KEY
+```
+
+4. **Install dependencies:**
 
     ```bash
     pip install -r requirements.txt
     ```
 
-4. **Run the application:**
+5. **Run the application:**
 
     ```bash
     python main.py
     ```
 
-5. **Navigate to the generated map file:**
+6. **Navigate to the generated map file:**
 
     Open `map.html` in a web browser to view the interactive map.
 
