@@ -1,6 +1,6 @@
 # Destination Prioritizer
 
-*The Destination Prioritizer is a tool that helps users plan their travel route by prioritizing locations based on the shortest driving distance. It integrates with Google Maps to provide geolocation data, calculate driving distances, and plot routes on a map.*
+*The Destination Prioritizer is a tool that helps users plan their travel route by prioritizing locations based on the shortest driving distance. It integrates with python to provide geolocation data, and Google Maps to calculate driving distances, and plot routes on a map.*
 
 ## Description
 
@@ -69,7 +69,7 @@ Simply enter your destinations, and the it will create a route that saves time a
 ## Screenshots
 
 - **Map with Prioritized Route**:
-  ![Map](screenshots/map-example.png)
+  ![Map]()
 
 ## Usage
 
@@ -82,13 +82,15 @@ Simply enter your destinations, and the it will create a route that saves time a
 
 ## Note
 
-- This app requires a Google Maps API key for geolocation and directions.
+- This app requires a Google Maps API key for geocoding and directions.
+- Python will fetch the geolocation of the user.
 - Ensure your internet connection is active to fetch geolocation data and plot the route.
 - Be aware of Google Maps API usage limits and quotas.
 
 ## Acknowledgements
 
-- **Geolocation and Directions**: Google Maps API.
+- **Geocoding and Directions**: Google Maps API.
+- **Geolocation**: Python.
 - **Interactive Maps**: Folium.
 - **HTTP Requests**: Requests library.
 - **Map Tiles**: CartoDB (OpenStreetMap).
