@@ -39,11 +39,11 @@ Simply enter your destinations, and the it will create a route that saves time a
     ```
 3. **Configure Environment Variables**:
 
-Create a `.env` file in the project root and include the following variables:
-
-```plaintext
-GOOGLEMAPS_API_KEY=YOUR_GOOGLE_MAPS_API_KEY
-```
+    Create a `.env` file in the project root and include the following variables:
+    
+    ```plaintext
+    GOOGLEMAPS_API_KEY=YOUR_GOOGLE_MAPS_API_KEY
+    ```
 
 4. **Install dependencies:**
 
